@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/modal.css">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Nome do Administrador </title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav__ul"">
+                <li class="nav__list"><a class="nav__link" href="">
+                    <img class="nav__img" src="./image/foto-2.png" alt="definicoes" width="24" height="24">
+                </a></li>
+
+                <li class="nav__list"><a class="nav__link" href="">
+                    <img class="nav__img" src="./image/foto-1.png" alt="listas de definicoes" width="24" height="24">
+                </a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+
+        <div class="cliente__div">
+
+           
+        </div>
+
+        <div class="cliente__box">
+            <section class="cliente__remetentes" style="height: 128px; line-height: 128px; text-align: center;">
+               
+               
+            </section>
+
+            <section class="cliente__licenca" style="height: 128px; line-height: 128px; text-align: center;">
+                <h2 class="cliente__licenca-title admin__title">
+                  NOME DO ADMINISTRADOR
+                </h2>
+   
+            </section>
+        </div>
+
+        <div class="admin__div">
+            <div>
+                <div class="admin__box admin__name">
+                    Nome do Administrador
+
+                </div>
+
+                <div class="admin__box admin__number"> 
+                    943919317
+                    
+                </div>
+
+
+                <div class="admin__box admin__email">
+                    businessjbx@gmail.com
+                    
+                </div>
+
+                <div class="admin__box admin__role">
+                    ROLE
+                </div>
+
+            </div>
+
+            <div>
+                <button class="admin__box admin__btn modal-send">
+                    ALTERAR PALAVRA PASSE
+                </button>
+
+            </div>
+
+        </div>
+
+
+          <!--first modal alterar palavra passe-->
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-box-content">
+                    <h3>ALTERAR PALAVRA PASSE?</h3>
+                    
+                    <section class="modal-box-section" style="flex-direction:row;">
+
+                        <form action="" class="modal__form">
+                           
+                            <input type="text" value="" id="password" class="modal__password"
+                            placeholder="Palavra passe actual" required>
+
+                            <input type="text" value="" id="password_nova" class="modal__password"
+                            placeholder="Palavra passe nova" required style="margin-top: 15px;">
+
+
+                            <button type="submit" class="modal-box-section-btn modal-btn" style="margin-top: 150px;">
+                               ALTERAR PASSE
+                            </button>
+                        
+                        
+                        
+                        </form>
+                    
+                    </section>
+                </div>
+            </div>
+            </div>
+            
+        <div id="myOverlay" class="overlay"></div>
+
+      
+
+    </main>
+    
+</body>
+<script src="js/modal.js"></script>
+</html>

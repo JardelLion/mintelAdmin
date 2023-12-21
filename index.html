@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/modal.css">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Clientes</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav__ul"">
+                <li class="nav__list"><a class="nav__link" href="">
+                    <img class="nav__img" src="./image/foto-2.png" alt="definicoes" width="24" height="24">
+                </a></li>
+
+                <li class="nav__list"><a class="nav__link" href="">
+                    <img class="nav__img" src="./image/foto-1.png" alt="listas de definicoes" width="24" height="24">
+                </a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+
+        <div class="cliente__div">
+
+            <h1 class="cliente__title">
+                nome do usuario
+            </h1>
+        </div>
+
+        <div class="cliente__box">
+            <section class="cliente__remetentes">
+                <h2 class="cliente__remetente__title">REMETENTES</h2>
+                <ul class="cliente__ul">
+                    <li class="cliente__list">
+                        <a href="#" class="cliente__link">
+                            DEBLIW
+                        </a>
+                    </li>
+
+                    <li class="cliente__list">
+                        <a href="#" class="cliente__link">
+                            BINGA
+                        </a>
+                    </li>
+                    <li class="cliente__list">
+                        <a href="#" class="cliente__link">
+                            MLPLDA
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="cliente__licenca">
+                <h2 class="cliente__licenca-title">
+                   <p>LICENCA: ATE 76425431</p> 
+                </h2>
+
+                <p class="cliente__creditos">Creditos: <span class="cliente__sms">100</span> SMS</p>
+                <p class="cliente__idsms">ID SMS HUB: <span class="cliente__idsms-email">emailcorporativo@mintel.ao</span></p>
+                <p class="cliente__passeId">PASSE ID SMS HUB: <span class="cliente__passeId-emial">email@email.com</span></p>
+            </section>
+        </div>
+
+        <div class="cliente__usuario">
+            <p>Nome do Usuario</p>
+        </div>
+
+        <div class="cliente__empresa">
+            <p>Empresa</p>
+        </div>
+
+        <div class="cliente__number">
+            <p>943 919 317</p>
+        </div>
+
+        <div class="cliente__email">
+            <p>businessjbx@gmail.com</p>
+        </div>
+
+
+        <section class="section">
+            <button class="section__alterardados modal-send">ALTERAR DADOS</button>
+            <button class="section__novapasse modal-send" >NOVA PASSE</button>
+            <button class="section__licenca modal-send">LICENCA</button>
+        </section>
+
+        
+        <span class="barra"></span>
+
+        <div class="cliente__authid">
+            <p class="authid__phrase">AUTHID:</p><p>5Gdedu#432224fsajffrtudasf</p>
+        </div>
+
+        <div class="cliente__secretkey">
+            <P class="secretkey__phrase">SECRET KEY:</P><p>TREdsgssaf5@jarfsagresad</p>
+        </div>
+
+
+       
+
+
+         <!--first modal alterar dados user-->
+         <div id="myModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-box-content">
+                    <h3>ALTERAR DADOS DO USUARIO</h3>
+                    
+                    <section class="modal-box-section" style="flex-direction:row;">
+
+                        <form action="" class="modal__form">
+                            <input type="text" value="" id="user__name" class="modal__username input__style"
+                            placeholder="Nome do usuario" required>
+
+                            <input type="text" value="" id="user__empire" class="modal__userempire input__style"
+                            placeholder="Empresa" required>
+
+                            <input type="text" value="" id="user__number" class="modal__usernumber input__style"
+                            placeholder="Nome do usuario" required>
+
+
+                            <input type="email" value="" id="user__email" class="modal__usereamil input__style"
+                            placeholder="businessjbx@gmail.com" required>
+
+
+                            <button type="submit" class="modal-box-section-btn green modal-btn">
+                                ALTERAR DADOS
+                            </button>
+                        
+                        
+                        
+                        </form>
+                    
+                    </section>
+                </div>
+            </div>
+            </div>
+            
+        <div id="myOverlay" class="overlay"></div>
+
+
+          <!--first modal alterar palavra passe-->
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-box-content">
+                    <h3>NOVA PALAVRA PASSE?</h3>
+                    
+                    <section class="modal-box-section" style="flex-direction:row;">
+
+                        <form action="" class="modal__form">
+                           
+                            <input type="text" value="" id="password" class="modal__password"
+                            placeholder="Palavra passe" required>
+
+
+                            <button type="submit" class="modal-box-section-btn modal-btn">
+                                NOVA PASSE
+                            </button>
+                        
+                        
+                        
+                        </form>
+                    
+                    </section>
+                </div>
+            </div>
+            </div>
+            
+        <div id="myOverlay" class="overlay"></div>
+
+
+          <!--first modal alterar licenca-->
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-box-content">
+                    <h3>LICENCA </h3>
+                    
+                    <section class="modal-box-section" style="flex-direction:row;">
+
+                        <form action="" class="modal__form">
+                           
+                            <div class="">
+
+                                    
+                                <select name="select" class="input__style" required>
+                                    <option value="" class="option-label" selected>REMETENTES</option>
+                                    <option value="mlpdlda">MLPDLDA</option>
+                                    <option value="binga">BINGA</option>
+                                    <option value="debliw">DEBLIW</option>
+                                </select>
+                            </div>
+                            <input type="date" value="" id="date" class="modal__date input__style"
+                            placeholder="12/12/2023" required style="margin-bottom: 90px;">
+
+
+                            <button type="submit" class="modal-box-section-btn green modal-btn">
+                                ALTERAR DADOS
+                            </button>
+                        
+                        
+                        
+                        </form>
+                    
+                    </section>
+                </div>
+            </div>
+            </div>
+            
+        <div id="myOverlay" class="overlay"></div>
+
+
+
+          <!--first modal alterar id athud-->
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-box-content">
+                    <h3>ALTERAR ID SMS HUB ?</h3>
+                    
+                    <section class="modal-box-section" style="flex-direction:row;">
+
+                        <form action="" class="modal__form">
+                            <input type="email" value="" id="email" class="modal__email"
+                            placeholder="Email corporativo sms hub" required>
+
+                            <input type="text" value="" id="password" class="modal__password"
+                            placeholder="Palavra passe SMS hub" required>
+
+
+                            <button type="submit" class="modal-box-section-btn green modal-btn">
+                                ALTERAR ID
+                            </button>
+                        
+                        
+                        
+                        </form>
+                    
+                    </section>
+                </div>
+            </div>
+            </div>
+            
+        <div id="myOverlay" class="overlay"></div>
+
+
+
+
+
+
+
+
+        <button class="alterar modal-send">
+            ALTERAR
+        </button>
+
+        <button class="baixarpdf">
+            BAIXAR PDF
+        </button>
+       
+
+
+       
+
+    </main>
+    
+</body>
+<script src="js/modal.js"></script>
+</html>
